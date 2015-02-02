@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Acme Product Management</title>
+		<link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="components/toastr/toastr.css">
+		<link rel="stylesheet" href="css/app.css">
+		
+		<!-- Library Scripts -->
+		<script	src="components/jquery/dist/jquery.js"></script>
+		<script	src="components/linqjs/linq.js"></script> 
+		<script	src="components/angular/angular.js"></script>
+		<script	src="components/angular-resource/angular-resource.js"></script>
+		<script	src="components/angular-mocks/angular-mocks.js"></script>
+		<script	src="components/angular-ui-router/release/angular-ui-router.js"></script>
+		<script	src="components/bootstrap/dist/js/bootstrap.js"></script>
+		<script src="components/angular-ui-utils/ui-utils.js"></script>
+		<script src="components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+		<script src="components/toastr/toastr.js"></script>
+		<script	src="components/d3/d3.js"></script>
+		<script	src="components/angular-charts/dist/angular-charts.js"></script>
+		
+
+		<!-- Application Script -->
+		<script	src="app/app.js"></script>
+		
+		<!-- Product Controllers -->
+		<script	src="app/products/productListCtrl.js"></script>
+		<script	src="app/products/productDetailCtrl.js"></script>
+		<script	src="app/products/productEditCtrl.js"></script>
+		<script src="app/prices/priceAnalyticsCtrl.js"></script>
+		
+		<!-- Services -->
+		<script	src="common/services/common.services.js"></script>
+		<script	src="common/services/productResource.js"></script>
+		<script	src="common/services/productResourceMock.js"></script>
+		<script src="common/services/productService.js"></script>
+
+	</head>
+	<body ng-app="productManagement">
+		
+		<nav class="navbar navbar-inverse">
+			<div class="container">
+				<a ui-sref="home" class="navbar-brand">
+					Acme Product Management
+				</a>
+				<div class="navbar-header">
+					<button type="button" 
+							class="navbar-toggle"
+							data-toggle="collapse"
+							data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li><a ui-sref="productList">Product List</a></li>
+						<li><a ui-sref="productEdit.info({productId:0})">
+							<i class="glyphicon glyphicon-plus"></i>
+							Add Product</a>
+						</li>
+						<li><a ui-sref="priceAnalytics">Price Analytics</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div ui-view></div>
+		</div>
+	</body>
+</html>

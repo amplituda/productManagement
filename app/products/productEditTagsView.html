@@ -1,0 +1,52 @@
+<form class="form-horizontal" name="productTagsForm">
+    <fieldset>
+        <legend>Product Search Tags</legend>
+        <div class="form-group">
+            <label class="col-md-2 control-label" for="inputSearchTags">Search Tags</label>
+            <div class="col-md-8">
+                <input class="form-control" 
+                       type="text" 
+                       id="inputSearchTags"
+                       placeholder="Product search keywords separated by comma" 
+                       ng-model="vm.newTags"/>
+            </div>
+            <div class="col-md-1">
+                <button type="button" 
+                        class="btn btn-default" 
+                        title="Add the specified tags"
+                        ng-click="vm.addTags(vm.newTags)">
+                    Add
+                </button>
+            </div>
+        </div>
+        <div class="row col-md-8 col-md-offset-2">
+            <span ng-repeat="tag in vm.product.tags | orderBy">
+                <button class="btn btn-default" 
+                        style="font-size: smaller; margin-bottom: 12px"
+                        ng-click="vm.removeTags($index)">
+                    {{tag}}
+                <span class="glyphicon glyphicon-remove"></span>
+                </button>
+            </span>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-4 col-md-offset-2">
+                <span>
+                    <button ng-click="vm.submit(productTagsForm.$valid)" 
+                            class="btn btn-primary" 
+                            style="width: 80px;margin-right: 10px;">
+                        Save
+                    </button>
+                </span>
+                <span>
+                    <button ng-click="vm.cancel()" 
+                            class="btn btn-default" 
+                            style="width: 70px">
+                        Cancel
+                    </button>
+                </span>
+            </div>
+        </div>
+    </fieldset>
+</form>

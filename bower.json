@@ -1,0 +1,24 @@
+{
+  "name": "productManagement",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular-charts": "~0.2.6",
+    "angular": "~1.3.0",
+    "bootstrap": "~3.2.0",
+    "angular-ui-router": "~0.2.12-pre1",
+    "angular-ui-utils": "~0.1.1",
+    "angular-bootstrap": "~0.11.2",
+    "toastr": "~2.0.3",
+    "linqjs": "*",
+    "d3": "~3.3.13",
+    "angular-resource": "~1.3.0",
+    "angular-mocks": "~1.3.0",
+    "angular-route": "~1.3.0",
+    "jquery": "~2.1.1"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ]
+}
