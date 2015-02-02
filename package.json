@@ -1,0 +1,24 @@
+{
+  "name": "productManagement",
+  "version": "1.0.0",
+  "description": "AngularJS Line of Business Applications",
+  "main": "server.js",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "postinstall": "bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amplituda/productManagement.git"
+  },
+  "author": "Alex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amplituda/productManagement/issues"
+  },
+  "homepage": "https://github.com/amplituda/productManagement"
+}
