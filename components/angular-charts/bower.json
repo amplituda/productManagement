@@ -1,0 +1,40 @@
+{
+  "name": "angular-charts",
+  "version": "0.2.6",
+  "authors": [
+    "chinmaymk"
+  ],
+  "description": "angular directives for common charts using d3",
+  "keywords": [
+    "d3",
+    "charts",
+    "angular",
+    "angularjs"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "main": [
+    "./dist/angular-charts.js"
+  ],
+  "dependencies": {
+    "d3": "~3.3.10",
+    "angular": "latest"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.2.16"
+  },
+  "gitHead": "797031f963aaffdb52ca70ab094d6b08945d7078",
+  "readme": "angular-charts\n==============\n\nangular directives for common charts using d3, for more information visit\n\nhttp://chinmaymk.github.io/angular-charts/\n\n###Contributors\n* [michalochman](https://github.com/michalochman) - [configurable colors](https://github.com/chinmaymk/angular-charts/commits?author=michalochman)\n* [reneolivo](https://github.com/reneolivo) - fix for [bower.json](https://github.com/chinmaymk/angular-charts/commits?author=reneolivo)\n\nLicense - MIT.\n\n###Got suggestions ?\nFeel free to submit a pull request, file an issue, or get in touch on twitter [@_chinmaymk](https://twitter.com/_chinmaymk)\n",
+  "readmeFilename": "README.md",
+  "_id": "angular-charts@0.2.6",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chinmaymk/angular-charts.git"
+  }
+}
